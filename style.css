@@ -180,3 +180,117 @@ h2 {
     font-size: 18px;
     margin-bottom: 25px;
 }
+/* CONTENEDOR DE IMÁGENES */
+.imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* ITEM (imagen + título) */
+  .item {
+    width: 260px;
+    text-align: center;
+  }
+  
+  /* CARD DE IMAGEN */
+  .card-img {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* TODAS LAS IMÁGENES */
+  .card-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  /* IMAGEN BASE */
+  .img-base {
+    opacity: 1;
+  }
+  
+  /* IMAGEN HOVER */
+  .img-hovered {
+    opacity: 0;
+  }
+  
+  /* CAMBIO AL HOVER */
+  .card-img:hover .img-base {
+    opacity: 0;
+  }
+  
+  .card-img:hover .img-hovered {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  /* TÍTULO */
+  .item h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+/* CARD DE IMAGEN */
+.card-img {
+    display: block;
+    position: relative;
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  
+  /* TODAS LAS IMÁGENES */
+  .card-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  /* IMAGEN BASE (VISIBLE POR DEFECTO) */
+  .card-img .img-base {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  /* IMAGEN HOVER (OCULTA) */
+  .card-img .img-hovered {
+    opacity: 0;
+    z-index: 2;
+  }
+  
+  /* EFECTO HOVER */
+  .card-img:hover .img-base {
+    opacity: 0;
+  }
+  
+  .card-img:hover .img-hovered {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  .item-1 h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  
