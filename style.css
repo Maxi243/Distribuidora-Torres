@@ -370,3 +370,42 @@ h2 {
 .whatsapp-btn:hover img {
   transform: scale(1.1);
 }
+/* Dropdown productos */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,.2);
+
+  /* animación */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  z-index: 1000;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dropdown-menu li a:hover {
+  background: #f2f2f2;
+}
+
+.dropdown-menu.open {
+  max-height: 300px;
+}
