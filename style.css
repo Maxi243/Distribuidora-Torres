@@ -409,3 +409,13 @@ h2 {
 .dropdown-menu.open {
   max-height: 300px;
 }
+.precio{
+  color: #ff7a00;
+}
+.linea-divisor{
+  background-color: #ff7a00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
